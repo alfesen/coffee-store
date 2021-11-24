@@ -1,0 +1,64 @@
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)),
+    url('../../images/background.png');
+  background-attachment: local;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+
+  .page-title {
+    position: absolute;
+    color: #bea67c;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+    .first-line {
+      margin-left: -80px;
+    }
+
+    .second-line {
+      margin-left: 80px;
+    }
+  }
+}
+
+.navbar-brand {
+  color: #fff;
+  letter-spacing: 5px;
+
+  .brand-name {
+    text-transform: uppercase;
+  }
+}
+
+.navbar a {
+  margin-right: 20px;
+  color: $font-header;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.discover {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  
+  h3 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  i {
+    font-size: 1.5em;
+  }
+}
