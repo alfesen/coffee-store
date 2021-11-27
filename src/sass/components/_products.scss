@@ -1,0 +1,30 @@
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.product-description {
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .line {
+    width: 80px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #bea67c;
+  }
+
+  .roastint {
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    h3 span {
+      color: #bea67c;
+    }
+  }  
+}
