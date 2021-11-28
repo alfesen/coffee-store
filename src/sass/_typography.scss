@@ -20,6 +20,9 @@ $font-header: #bea67c;
   color: $font-header;
   font-size: 2em;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 46px;
 }
 
 .bottom-line {
@@ -27,5 +30,8 @@ $font-header: #bea67c;
   width: 340px;
   background-color: $font-header;
   border-radius: 5px;
+  left: 50%;
+  margin: auto;
+  margin-bottom: 66px;
 }
 
