@@ -1,11 +1,27 @@
+.coffee {
+  margin-top: 40px;
+}
+
 img {
-  width: 300px;
+  width: 350px;
   height: auto;
   border-radius: 3px;
   box-shadow: 3px 3px 5px black;
+  transition: 1s all;
+}
+
+img:hover {
+  scale: 110%;
+}
+
+.right {
+  margin-left: 40px;
+  padding-right: 0;
 }
 
 .product-description {
+  width: 100%;
+
   h1 {
     font-weight: bold;
     text-transform: uppercase;
@@ -26,5 +42,5 @@ img {
     h3 span {
       color: #bea67c;
     }
-  }  
+  }
 }
