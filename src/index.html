@@ -42,7 +42,7 @@
   </header>
 
   <section id="home">
-    <div id="home-page" class="home-page container"></div>
+    <div id="home-page" class="home-page"></div>
   </section>
   <section id="product">
     <div id="product-page" class="product-page container"></div>
@@ -52,59 +52,82 @@
   </section>
 
   <script id="template-home-page" type="text/x-handlebars-template">
-    <div class="la-lagartija row">
-      <div class="product-description col-sm">
-        <div class="row">
-          <h1>01. La-lagartija</h1>
-          <div class="line col-sm-6"></div>
-          <p class="col-sm">Mysterious and traecherous... The best choice for the start of your journey!</p>
+    <div class="container">
+      
+      <h1 class="header">products</h1>
+      <div class="bottom-line"></div>
+
+      <div class="coffee la-lagartija row">
+        <div class="product-description col-sm">
+          <div class="row">
+            <h1 class="name" id="name">{{ number }} {{ name }}</h1>
+            <div class="line col-sm-6"></div>
+            <p class="description col-sm">{{ description }}</p>
+          </div>
+
+          <div class="roastint">
+            <h3 class="roasting">roasting: <span>{{ roasting }}</span></h3>
+            <h3 class="intensity">intensity: <span>{{ intensity }}</span></h3>
+          </div>
         </div>
 
-        <div class="roastint">
-          <h3 class="roasting">roasting: <span></span></h3>
-          <h3 class="intencity">intencity: <span></span></h3>
+        <div class="product-image col-sm">
+          {{{ images }}}
         </div>
+      
+      </div>
+      
+      <div class="coffee el-tigre row">
+        
+        <div class="product-image col-sm">
+          <img src="images/coffee-2.png" alt="">
+        </div>
+
+        <div class="right product-description col-sm">
+          <div class="row">
+            <h1>02. el-tigre</h1>
+            <div class="line col-sm-2"></div>
+            <p class="description col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet repellat vero quia error. Quidem nulla debitis rerum, doloremque corrupti quo optio incidunt excepturi odio ad, doloribus ipsa fugit. Ducimus.</p>
+          </div>
+        </div>
+
       </div>
 
-      <div class="product-image col-sm">
-        <img src="images/coffee-1.png" alt="">
+      <div class="coffee la-cucaracia row">
+
+        <div class="product-description col-sm">
+          <div class="row">
+            <h1>03. La-cucaracia</h1>
+            <div class="line col-sm-6"></div>
+            <p class="description col-sm">Mysterious and traecherous... The best choice for the start of your journey!</p>
+          </div>
+
+          <div class="roastint">
+            <h3 class="roasting">roasting: <span></span></h3>
+            <h3 class="intensity">intensity: <span></span></h3>
+          </div>
+        </div>
+
+        <div class="product-image col-sm">
+          <img src="images/coffee-3.png" alt="">
+        </div>
+
       </div>
+
     </div>
-    
-    <div class="el-tigre row">
-      <div class="product-image col-sm">
-        <img src="images/coffee-2.png" alt="">
-      </div>
 
-      <div class="product-description col-sm">
-        <div class="row">
-          <h1>02. el-tigre</h1>
-          <div class="line col-sm-6"></div>
-          <p class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet repellat vero quia error. Quidem nulla debitis rerum, doloremque corrupti quo optio incidunt excepturi odio ad, doloribus ipsa fugit. Ducimus.</p>
-        </div>
-      </div>
-    </div>
+  
+</script>
 
-    <div class="la-cucaracia row">
-      <div class="product-description col-sm">
-        <div class="row">
-          <h1>03. La-cucaracia</h1>
-          <div class="line col-sm-6"></div>
-          <p class="col-sm">Mysterious and traecherous... The best choice for the start of your journey!</p>
-        </div>
+  <section id="about"></section>
 
-        <div class="roastint">
-          <h3 class="roasting">roasting: <span></span></h3>
-          <h3 class="intencity">intencity: <span></span></h3>
-        </div>
-      </div>
-
-      <div class="product-image col-sm">
-        <img src="images/coffee-3.png" alt="">
-      </div>
-    </div>
-    
-  </script>
+  <script id="template-about" type="text/x-handlebars-template">
+    <div class="about">
+    <h1 class="header">about us</h1>
+    <div class="bottom-line"></div>
+    <p id="about-us"></p>
+  </div>
+</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
   <script src="js/script.js" type="module"></script>
