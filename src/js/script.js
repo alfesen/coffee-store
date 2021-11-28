@@ -1,31 +1,54 @@
-import { settings } from './settings.js';
-import Home from './components/Home.js';
+import {settings } from './settings.js';
+import Product from './components/Product.js';
 
-const app = {
-  initData: function() {
+export const app = {
+  
+  initData: function () {
+    const thisApp = this;
+
+    thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.products;
-    this.data = {};
-    fetch(url)
-      .then((rawResponse) => {
-        return rawResponse.json();
+
+    fetch(url) // fetch(połącz się), zapytanie(request) pod podany adres endpointu(url)
+      .then(function (rawResponse) { // odpowiedź w formacie JSON
+        return rawResponse.json(); // konwersja odpowiedzi na obiekt JS-owy
       })
-      .then((parsedResponse) => {
-        this.data.products = parsedResponse;
+      .then(function (parsedResponse) { // kolejny krok algorytmu
+        console.log('parsedResponse: ', parsedResponse);
+
+        /* save parsedResponse as thisApp.data.products */
+        thisApp.data.products = parsedResponse;
+       
       });
+
+    console.log('thisApp.data', JSON.stringify(thisApp.data));
+  },
+  
+  initMenu: function () {
+    const thisApp = this;
+
+    for (let productData in thisApp.data.products) {
+      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData].data);
+    }
+
   },
 
-  
-  initHome: function() {
+
+  initProduct: function() {
     const thisApp = this;
     
-    thisApp.home = new Home();
+    thisApp.product = new Product();
   },
   
   init: function() {
     const thisApp = this;
     thisApp.initData();
-    thisApp.initHome();
+    thisApp.initMenu();
+    thisApp.initProduct();
   },
+
+  
+
   
 };
 
