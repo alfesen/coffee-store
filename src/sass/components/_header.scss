@@ -29,10 +29,10 @@ header {
 
 .navbar-brand {
   color: #fff;
-  letter-spacing: 5px;
-
+  text-transform: uppercase;
+  
   .brand-name {
-    text-transform: uppercase;
+    letter-spacing: 5px;
   }
 }
 
