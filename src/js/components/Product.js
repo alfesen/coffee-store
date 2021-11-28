@@ -22,10 +22,7 @@ class Product {
     aboutSection.appendChild(thisProduct.element);
   }
 
-  
-  
-
-  
+    
 }
 
 export default Product;
