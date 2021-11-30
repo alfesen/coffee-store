@@ -1,8 +1,10 @@
-import {settings } from './settings.js';
+import {
+  settings
+} from './settings.js';
 import Product from './components/Product.js';
 
 export const app = {
-  
+
   initData: function () {
     const thisApp = this;
 
@@ -18,38 +20,35 @@ export const app = {
 
         /* save parsedResponse as thisApp.data.products */
         thisApp.data.products = parsedResponse;
-       
+
+
+        for (let productData in thisApp.data.products) {
+          new Product(thisApp.data.products[productData].id, thisApp.data.products[productData].data);
+        }
+
       });
 
     console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
-  
-  initMenu: function () {
+
+
+
+  initProduct: function () {
     const thisApp = this;
 
-    for (let productData in thisApp.data.products) {
-      new Product(thisApp.data.products[productData].id, thisApp.data.products[productData].data);
-    }
-
+    thisApp.products = new Product();
   },
 
+  init: function () {
+    const thisApp = this;
 
-  initProduct: function() {
-    const thisApp = this;
-    
-    thisApp.product = new Product();
-  },
-  
-  init: function() {
-    const thisApp = this;
-    thisApp.initData();
-    thisApp.initMenu();
     thisApp.initProduct();
+    thisApp.initData();
   },
 
-  
 
-  
+
+
 };
 
 app.init();
