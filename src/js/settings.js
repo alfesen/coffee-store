@@ -26,6 +26,5 @@ export const settings = {
 
 export const templates = {
   homePage: Handlebars.compile(document.querySelector(select.templateof.homePage).innerHTML),
-  about: Handlebars.compile(document.querySelector(select.templateof.about).innerHTML),
 };
 
