@@ -1,5 +1,7 @@
 {
-  "products": [{
+  "products": [
+    {
+    "laLagartija": {
       "id": "laLagartija",
       "number": "01.",
       "name": "La-lagartija",
@@ -10,7 +12,7 @@
         "<img src=\"/images/coffee-1.png\">"
       ]
     },
-    {
+    "elTigre": {
       "id": "elTigre",
       "number": "02.",
       "name": "El-tigre",
@@ -21,7 +23,7 @@
         "<img src=\"../images/coffee-2.png\">"
       ]
     },
-    {
+    "laCucaracia": {
       "id": "laCucaracia",
       "number": "03.",
       "name": "La cucaracha",
@@ -32,5 +34,5 @@
         "<img src=\"../images/coffee-3.png\">"
       ]
     }
-  ]
+  }]
 }
