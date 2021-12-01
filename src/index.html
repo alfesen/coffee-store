@@ -48,15 +48,20 @@
       <div id="home-page"></div>
     </div>
   </section>
-  <section id="product">
-    <div id="product-page" class="product-page container"></div>
+  <section class="about">
+    <div class="container">
+      <h1 class="header">About us</h1>
+      <div class="bottom-line"></div>
+      <div id="about"></div>
+    </div>
   </section>
   <section id="contact">
     <div id="conact-page" class="contact-page container"></div>
   </section>
+  <footer><p>&copy; EL TIGRE Inc.</p></footer>
 
   <script id="template-home-page" type="text/x-handlebars-template">
-    {{#each products}}
+
     <div class="coffee {{ id }} row">
         <div class="product-description col-sm">
           <div class="row">
@@ -66,21 +71,24 @@
           </div>
 
           <div class="roastint">
-            <h3 class="roasting"><span>{{ roasting }}</span></h3>
-            <h3 class="intensity"><span>{{ intensity }}</span></h3>
+            <h3 class="roasting">Roasting: <span>{{ roasting }}</span></h3>
+            <h3 class="intensity">Intensity: <span>{{ intensity }}</span></h3>
           </div>
         </div>
 
         <div class="product-image col-sm">
           {{{ images }}}
         </div>
-      {{/each}}
       </div>
-    
-
-  
   </script>
 
+  <script id="template-about" type="text/x-handlebars-template">
+    <div class="about-text">
+      <p>{{ firstText }}</p>
+      <p>{{ secondText }}</p>
+      <p class="signature">{{ signature }}</p>
+    </div>
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
