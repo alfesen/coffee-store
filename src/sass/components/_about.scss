@@ -4,5 +4,22 @@
     url('../../images/about-us.jpg');
   background-attachment: local;
   background-size: cover;
-  height: 70vh;
+  height: 55vh;
+  padding: 0;
+}
+
+.about-text{
+  width: 450px;
+  margin: auto;
+  color: #fff;
+  font-size: 1.2em;
+  font-style: italic;
+
+  p {
+    margin: 0 0 40px 0;
+  }
+
+  .signature {
+    text-align: end;
+  }
 }
