@@ -41,24 +41,42 @@
     </div>
   </header>
 
-  <section id="home">
-    <div class="home-page container">
-      <h1 class="header">products</h1>
-      <div class="bottom-line"></div>
-      <div id="home-page"></div>
-    </div>
-  </section>
-  <section class="about">
-    <div class="container">
-      <h1 class="header">About us</h1>
-      <div class="bottom-line"></div>
-      <div id="about"></div>
-    </div>
-  </section>
-  <section id="contact">
-    <div id="conact-page" class="contact-page container"></div>
-  </section>
-  <footer><p>&copy; EL TIGRE Inc.</p></footer>
+  <div id="pages">
+    <section id="products">
+      <div class="home-page container">
+        <h1 class="header">products</h1>
+        <div class="bottom-line"></div>
+        <div id="home-page"></div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h1 class="header">About us</h1>
+        <div class="bottom-line"></div>
+        <div id="about"></div>
+      </div>
+    </section>
+    <section id="contact" class="hidden">
+      <div id="conact-page" class="contact-page container">
+        <h1 class="header">Contact us</h1>
+        <div class="bottom-line"></div>
+        <div class="contact-form">
+          <form action="">
+            <h3>Name</h3>
+            <input type="text" id="author-name" name="name">
+            <h3>Title</h3>
+            <input type="text" name="title" id="message-title">
+            <h3>message</h3>
+            <textarea name="message" id="message-text" cols="30" rows="10"></textarea>
+            <button class="submit" type="submit"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; EL TIGRE Inc.</p>
+    </footer>
+  </div>
 
   <script id="template-home-page" type="text/x-handlebars-template">
 
