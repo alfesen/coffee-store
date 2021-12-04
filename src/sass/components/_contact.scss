@@ -9,6 +9,10 @@ form {
   justify-content: space-between;
   flex-direction: column;
 
+  input:focus {
+    border: none;
+  }
+
   h3 {
     text-transform: uppercase;
     font-weight: 600;
