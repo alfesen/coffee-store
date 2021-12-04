@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Tigre is a specialty Venezuela coffee beans store - join our passion">
   <title>El Tigre - specialty coffee beans</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
@@ -22,9 +23,9 @@
           <h5 class="brand-surname">venezuela coffee beans</h5>
         </div>
         <div class="navbar-nav">
-          <a href="#home">home</a>
-          <a href="#products">products</a>
-          <a href="#contact">contact</a>
+          <a class="home-btn" href="#home">home</a>
+          <a class="product-btn" href="#products">products</a>
+          <a class="contact-btn" href="#contact">contact</a>
         </div>
       </div>
     </div>
@@ -42,22 +43,24 @@
   </header>
 
   <div id="pages">
-    <section id="products">
-      <div class="home-page container">
-        <h1 class="header">products</h1>
-        <div class="bottom-line"></div>
-        <div id="home-page"></div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <h1 class="header">About us</h1>
-        <div class="bottom-line"></div>
-        <div id="about"></div>
-      </div>
-    </section>
-    <section id="contact" class="hidden">
-      <div id="conact-page" class="contact-page container">
+    <div id="#home">
+      <section id="products" class="">
+        <div class="home-page container">
+          <h1 class="header">products</h1>
+          <div class="bottom-line"></div>
+          <div id="home-page"></div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h1 class="header">About us</h1>
+          <div class="bottom-line"></div>
+          <div id="about"></div>
+        </div>
+      </section>
+    </div>
+    <section id="contact" class="post">
+      <div id="contact-page" class="contact-page container">
         <h1 class="header">Contact us</h1>
         <div class="bottom-line"></div>
         <div class="contact-form">
@@ -68,15 +71,15 @@
             <input type="text" name="title" id="message-title">
             <h3>message</h3>
             <textarea name="message" id="message-text" cols="30" rows="10"></textarea>
-            <button class="submit" type="submit"></button>
+            <button class="submit" type="submit">Submit</button>
           </form>
         </div>
       </div>
     </section>
-    <footer>
-      <p>&copy; EL TIGRE Inc.</p>
-    </footer>
   </div>
+  <footer>
+    <p>&copy; EL TIGRE Inc.</p>
+  </footer>
 
   <script id="template-home-page" type="text/x-handlebars-template">
 
