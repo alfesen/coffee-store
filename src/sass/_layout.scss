@@ -1,11 +1,10 @@
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-
 }
 
-.page {
-  padding: 46px 0;
+#pages {
+  padding: 46px 0 0 0;
 }
 
 section {
@@ -14,5 +13,8 @@ section {
 
 footer {
   text-align: center;
-  padding: 0;
+  padding: 10px;
+  p {
+    padding: 0;
+  }
 }
