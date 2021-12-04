@@ -3,6 +3,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.hidden {
+.post {
   display: none;
+
+  &.active {
+    display: block;
+  }
 }
