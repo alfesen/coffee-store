@@ -4,16 +4,18 @@
     url('../../images/about-us.jpg');
   background-attachment: local;
   background-size: cover;
-  height: 55vh;
+  height: 600px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .about-text{
-  width: 450px;
+  max-width: 450px;
   margin: auto;
   color: #fff;
   font-size: 1.2em;
   font-style: italic;
+  padding-bottom: 10px;
 
   p {
     margin: 0 0 40px 0;
