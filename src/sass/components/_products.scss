@@ -3,7 +3,7 @@
 }
 
 img {
-  width: 350px;
+  max-width: 350px;
   height: auto;
   border-radius: 3px;
   box-shadow: 3px 3px 5px black;
@@ -11,7 +11,7 @@ img {
 }
 
 img:hover {
-  scale: 110%;
+  transform: scale(1.1);
 }
 
 .right {
@@ -20,7 +20,7 @@ img:hover {
 }
 
 .product-description {
-  width: 100%;
+  max-width: 100%;
 
   h1 {
     font-weight: bold;
