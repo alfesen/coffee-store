@@ -1,36 +1,47 @@
 {
-  "products": [{
-      "id": 1,
+  "products": [
+    {
+    "laLagartija": {
+      "id": "laLagartija",
       "number": "01.",
       "name": "La-lagartija",
       "roasting": "5/10",
-      "intencity": "6/10",
+      "intensity": "6/10",
       "description": "Mysterious and traecherous... The best choice for the start of your journey! It will provide you a rich and delicious flavour",
       "images": [
-        "<img src=\"/images/coffee-1.png\">"
+        "<img src=\"/images/coffee-1.png\" alt=\"la-lagartija-coffee-image\">"
       ]
     },
-    {
-      "id": 2,
+    "elTigre": {
+      "id": "elTigre",
       "number": "02.",
       "name": "El-tigre",
       "roasting": "8/10",
-      "intencity": "9/10",
+      "intensity": "9/10",
       "description": "Really dark coffee, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
       "images": [
-        "<img src=\"../images/coffee-2.png\">"
+        "<img src=\"../images/coffee-2.png\" alt=\"el-tigre-coffee-image\">"
       ]
     },
-    {
-      "id": 3,
+    "laCucaracia": {
+      "id": "laCucaracia",
       "number": "03.",
       "name": "La cucaracha",
       "roasting": "3/10",
-      "intencity": "7/10",
+      "intensity": "7/10",
       "description": "Sweet and intense with a big amount of different flavors. Caramel,  grapes, strwaberry, you name it! It’s great choice for warm summer days.",
       "images": [
-        "<img src=\"../images/coffee-3.png\">"
+        "<img src=\"../images/coffee-3.png\" alt=\"la-cucaracia-coffee-image\">"
       ]
+    }
+  }],
+
+  "about": [{
+    "text": {
+      "firstText":  "Who are we? Just a  bunch of friends with a love for good coffee and desire to create something new, something original.",
+      "secondText": "Our coffees reflect us - young, wild and free. We are on the journey of new tastes...",
+      "signature": "Join us!"
+      }
     }
   ]
 }

@@ -21,10 +21,6 @@
             "single",
             {"allowTemplateLiterals": true}
         ],
-        "semi": [
-            "error",
-            "always"
-        ],
         "no-console": [
             "off"
         ]

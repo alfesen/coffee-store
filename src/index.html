@@ -10,41 +10,49 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
     rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   <link rel="stylesheet" href="vendor/fontello.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" type="module" defer></script>
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="navbar">
-        <div class="navbar-brand">
-          <h4 class="brand-name">el tigre</h4>
-          <h5 class="brand-surname">venezuela coffee beans</h5>
-        </div>
-        <div class="navbar-nav">
-          <a class="home-btn" href="#home">home</a>
-          <a class="product-btn" href="#products">products</a>
-          <a class="contact-btn" href="#contact">contact</a>
-        </div>
+        <a href="/#/home">
+          <div class="navbar-brand">
+            <h4 class="brand-name">el tigre</h4>
+            <h5 class="brand-surname">venezuela coffee beans</h5>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="container">
-      <div class="page-title">
-        <h1 class="first-line">home of</h1>
-        <h1 class="second-line">original tastes</h1>
-        <div class="bottom-line"></div>
-      </div>
-      <div class="discover">
-        <h3>discover</h3>
-        <i class="icon-arrow"></i>
+      <div class="navbar-nav d-flex flex-md-row">
+        <a class="home-btn" href="#home">home</a>
+        <a class="product-btn" href="#products">products</a>
+        <a class="contact-btn" href="#contact">contact</a>
       </div>
     </div>
   </header>
+  <div class="container">
+    <div class="page-title">
+      <h1 class="first-line">home of</h1>
+      <h1 class="second-line">original tastes</h1>
+      <div class="bottom-line"></div>
+    </div>
+    <div class="discover">
+      <h3>discover</h3>
+      <i class="icon-arrow"></i>
+    </div>
+  </div>
+
 
   <div id="pages">
     <div id="#home">
-      <section id="products" class="">
+      <section id="products" class="container">
         <div class="home-page container">
           <h1 class="header">products</h1>
           <div class="bottom-line"></div>
@@ -61,43 +69,41 @@
     </div>
     <section id="contact" class="post">
       <div id="contact-page" class="contact-page container">
-        <h1 class="header">Contact us</h1>
+        <h2 class="header pt-0">Contact us</h2>
         <div class="bottom-line"></div>
-        <div class="contact-form">
-          <form action="">
-            <h3>Name</h3>
-            <input type="text" id="author-name" name="name">
-            <h3>Title</h3>
-            <input type="text" name="title" id="message-title">
-            <h3>message</h3>
-            <textarea name="message" id="message-text" cols="30" rows="10"></textarea>
-            <button class="submit" type="submit">Submit</button>
-          </form>
-        </div>
+        <form class="contact-form my-5 mx-auto">
+          <h3>Name</h3>
+          <input type="text" id="author-name" name="name">
+          <h3>Title</h3>
+          <input type="text" name="title" id="message-title">
+          <h3>message</h3>
+          <textarea name="message" id="message-text" cols="30" rows="10"></textarea>
+          <button class="submit" type="submit">Submit</button>
+        </form>
       </div>
     </section>
   </div>
+
   <footer>
     <p>&copy; EL TIGRE Inc.</p>
   </footer>
 
   <script id="template-home-page" type="text/x-handlebars-template">
-
-    <div class="coffee {{ id }} row">
-        <div class="product-description col-sm">
-          <div class="row">
-            <h1 class="name">{{ number }} {{ name }}</h1>
-            <div class="line col-sm-6"></div>
-            <p class="description col-sm">{{ description }}</p>
+    <div class="coffee {{ id }} row mb-5 py-2 d-flex flex-column flex-md-row align-items-center">
+        <div class="product-description col-sm ">
+          <div class="row d-flex">
+            <h2 class="name">{{ number }} {{ name }}</h2>
+            <div class="line d-none d-md-flex col-sm-6 mt-2"></div>
+            <p class="description col-sm mb-0 mb-md-5">{{ description }}</p>
           </div>
 
-          <div class="roastint">
-            <h3 class="roasting">Roasting: <span>{{ roasting }}</span></h3>
-            <h3 class="intensity">Intensity: <span>{{ intensity }}</span></h3>
+          <div class="roastint d-flex flex-column align-items-end my-4 align-items-md-start">
+            <h4 class="roasting">Roasting: <span>{{ roasting }}</span></h4>
+            <h4 class="intensity">Intensity: <span>{{ intensity }}</span></h4>
           </div>
         </div>
 
-        <div class="product-image col-sm">
+        <div class="product-image col-md-5 p-0">
           {{{ images }}}
         </div>
       </div>
@@ -113,7 +119,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

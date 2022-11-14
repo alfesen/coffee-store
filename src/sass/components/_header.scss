@@ -6,8 +6,7 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative;
-
-
+  
   .page-title {
     position: absolute;
     color: #bea67c;
@@ -31,7 +30,13 @@ header {
 .navbar-brand {
   color: #fff;
   text-transform: uppercase;
-  
+  cursor: pointer;
+  transition: color .2s ;
+
+  &:hover {
+    color: $font-header;
+  }
+
   .brand-name {
     letter-spacing: 5px;
   }
@@ -42,6 +47,11 @@ header {
   color: $font-header;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color .2s ;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .discover {

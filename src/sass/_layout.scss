@@ -12,9 +12,14 @@ section {
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #1b161a;
+  
   p {
-    padding: 0;
+    padding: 1em;
+    margin: 0;
   }
 }

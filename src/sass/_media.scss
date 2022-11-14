@@ -2,6 +2,7 @@
   body {
     margin: 0;
   }
+
   .container .page-title {
     width: 280px;
     font-size: 0.5em;
@@ -9,24 +10,30 @@
     .bottom-line {
       width: 200px;
     }
-  } 
-
-  .roastint {
-    margin-bottom: 20px;
   }
 
   .coffee {
     flex-direction: column;
     margin: auto;
-    margin-bottom: 30px;
-  }
 
-  .product-description {
-    width: 70%;
-    justify-content: center;
+    .product-description {
+      width: 70%;
+      justify-content: center;
+    }
   }
 
   .about-text {
     width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .elTigre {
+    flex-direction: row-reverse !important;
+    gap: 2em;
+
+    .roastint {
+      align-items: flex-end !important;
+    }
   }
 }
