@@ -23,18 +23,24 @@ export const select = {
     active: 'active',
     post: 'post',
   },
-};
+}
 
 export const settings = {
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname == 'localhost'? ':3131' : ''),
+    url:
+      '//' +
+      window.location.hostname +
+      (window.location.hostname === 'localhost' ? ':3131' : ''),
     products: 'products',
     about: 'about',
   },
-};
+}
 
 export const templates = {
-  homePage: Handlebars.compile(document.querySelector(select.templateof.homePage).innerHTML),
-  aboutSection: Handlebars.compile(document.querySelector(select.templateof.about).innerHTML),
-};
-
+  homePage: Handlebars.compile(
+    document.querySelector(select.templateof.homePage).innerHTML
+  ),
+  aboutSection: Handlebars.compile(
+    document.querySelector(select.templateof.about).innerHTML
+  ),
+}

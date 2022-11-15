@@ -1,7 +1,6 @@
 .about {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)),
-    url('../../images/about-us.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/about-us.jpg');
   background-attachment: local;
   background-size: cover;
   height: 600px;
@@ -9,7 +8,7 @@
   margin-bottom: 0;
 }
 
-.about-text{
+.about-text {
   max-width: 450px;
   margin: auto;
   color: #fff;
